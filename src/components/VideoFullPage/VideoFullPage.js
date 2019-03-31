@@ -79,7 +79,6 @@ class VideoFullPage extends Component {
       }
 
       if (this.state.videoObject) {
-        console.log('state-fullVideo', this.state.videoObject)
 
         // video with related questions => has onReady
         if(this.state.videoObject.questions.length > 0) {
@@ -138,7 +137,6 @@ class VideoFullPage extends Component {
           // check if current time === question time, show alert
           function onProgress(time) { 
             var timeRoundedDown = Math.floor(time)
-            console.log('timeRoundedDown', timeRoundedDown)
             // if timeRoundedDown is the same as any time of object inside the questions array
             if (videoQuestions.some(el => el.time === timeRoundedDown))
             {

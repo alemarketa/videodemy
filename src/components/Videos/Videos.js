@@ -36,7 +36,6 @@ class Videos extends Component {
   //   };
 
   componentDidMount() {
-    console.log('api key', process.env.REACT_APP_YOUTUBE_API_KEY)
 
     fetch("http://localhost:10327/api/getData/videos")
       .then(data => data.json())
