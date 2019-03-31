@@ -44,7 +44,7 @@ class SelectedVideo extends Component {
           <p>{this.state.selectedVideo.author}</p>
           
           <iframe title='y-video-selected' width="420" height="315"
-            src={"http://www.youtube.com/embed/" + this.state.selectedVideo.videoId}>
+            src={"https://www.youtube.com/embed/" + this.state.selectedVideo.videoId}>
           </iframe>
           
           <div className="navigation-link">
