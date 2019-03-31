@@ -47,7 +47,7 @@ class SelectedVideo extends Component {
           </iframe>
           
           <div className="navigation-link">
-            <input className="input-field" value={"https://localhost:3000/videoplayer/" + this.state.selectedVideo._id } readOnly></input>
+            <input className="input-field" value={"https://videomy.herokuapp.com/videoplayer/" + this.state.selectedVideo._id } readOnly></input>
             <a className="button-go" href={"/videoplayer/" + this.state.selectedVideo._id }>GO</a>
           </div>
         </div>
