@@ -1,0 +1,22 @@
+.content {
+  margin-left: 50px;
+}
+
+.image-placeholder {
+  float: left;
+}
+
+.image-placeholder img {
+  display: block;
+}
+
+.video {
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px;
+  overflow: auto;
+  padding: 16px;
+  text-align: center;
+}

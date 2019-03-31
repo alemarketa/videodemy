@@ -1,0 +1,24 @@
+.button-go {
+    background-color: orange;
+    border: 1px solid cornsilk;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.input-field {
+    margin: 10px;
+    margin-left: 35px;
+    padding: 12px;
+    width: 400px;
+}
+
+.navigation-link {
+    margin-top: 20px;
+}
+
+.selected-video {
+    margin: 20px auto;
+    text-align: center;
+}
+
+

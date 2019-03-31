@@ -1,0 +1,15 @@
+body {
+  margin: 30px;
+}
+
+.main-page {
+  overflow: auto;
+}
+
+.selected-video {
+  overflow: hidden;
+}
+
+.videos {
+  float: left;
+}
