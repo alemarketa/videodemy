@@ -11,7 +11,6 @@ class SelectedVideo extends Component {
 
   // get the selected video from db
   componentDidUpdate() {
-    console.log(this.props)
     
     // video was selected
     if (this.props.id) {

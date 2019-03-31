@@ -17,23 +17,6 @@ class Videos extends Component {
     videos: [],
   };
 
-  // get all videos from the db + add image thumbnail placeholder
-  // componentDidMount() {
-  //   fetch("http://localhost:10327/api/getData/videos")
-  //     .then(data => data.json())
-  //     .then(res => {
-  //       console.log('VIDEOS: res.data', res.data)
-  //         const videosWithImage = res.data.map(video => {
-  //           return {
-  //             ...video,
-  //             imageUrl: 'https://via.placeholder.com/150',
-  //             duration: '40min'
-  //           }
-  //         });
-  //         this.setState({ videos: videosWithImage })
-  //       })
-  //     .catch(error => console.log(error))
-  //   };
 
   componentDidMount() {
 
@@ -45,11 +28,9 @@ class Videos extends Component {
         
         // call YT api foreach video
         for (let [i, video] of allVideos.data.entries()) {
-          console.log('video', video)
           fetch("https://www.googleapis.com/youtube/v3/videos?id=" + video.videoId + "&part=contentDetails&key=" + process.env.REACT_APP_YOUTUBE_API_KEY)
             .then(responseYoutube => responseYoutube.json())
             .then(videoMetaData => {
-              console.log('videoMetaData', videoMetaData)
               
               // has metadata duration
               if(videoMetaData.items.length > 0) {
